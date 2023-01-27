@@ -16,9 +16,7 @@
 	 "cached":true,
 	 "responseTime":"0.694ms"}
 
-	where github_user_id is the github user id.
-	
 ### Stop Redis Server
 	sudo service redis-server stop
 
-Version 10	
+Version 9	
