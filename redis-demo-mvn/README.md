@@ -16,8 +16,8 @@
 	 "cached":true,
 	 "responseTime":"0.694ms"}
 
-	where github user id
+	where github
 ### Stop Redis Server
 	sudo service redis-server stop
 
-Version 15 
+Version 14
