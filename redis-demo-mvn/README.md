@@ -7,7 +7,7 @@
 ### Run 
 	mvn exec:java
 	
-### Browser
+### Chrome Browser
 	http://localhost:5000/repos/{github_user_id}
 	
 	Sample response:
@@ -21,4 +21,4 @@
 ### Stop Redis Server
 	sudo service redis-server stop
 
-Version 10	
+Version 11	
