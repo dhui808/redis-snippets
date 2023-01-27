@@ -2,7 +2,7 @@
 	sudo service redis-server restart
 
 ### Generate Gradle Wrapper
-	gradle wrapper --gradle-version 7.6
+	gradle wrapper
 
 ### Build Application
 	gradlew build
