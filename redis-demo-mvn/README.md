@@ -20,4 +20,4 @@
 ### Stop Redis Server
 	sudo service redis-server stop
 
-Version 18
+Version 17
