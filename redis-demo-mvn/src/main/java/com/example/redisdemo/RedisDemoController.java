@@ -20,6 +20,8 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
 import redis.clients.jedis.Jedis;
+import redis.clients.jedis.JedisPool;
+import redis.clients.jedis.JedisPoolConfig;
 
 @RestController
 public class RedisDemoController implements ApplicationListener<ContextRefreshedEvent> {
@@ -46,7 +48,8 @@ public class RedisDemoController implements ApplicationListener<ContextRefreshed
             if (!redisUrl.equals("")) {
                 jedis = new Jedis(redisUrl);
             } else {
-                jedis = new Jedis(redisHost, Integer.parseInt(redisPort));
+            	JedisPool jedisPool = new JedisPool(new JedisPoolConfig(), redisHost, Integer.parseInt(redisPort));
+                jedis = jedisPool.getResource();
             }
             if (!redisPassword.equals("")){
                 jedis.auth(redisPassword);
